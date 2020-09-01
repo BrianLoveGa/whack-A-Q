@@ -64,12 +64,12 @@ startButton.addEventListener("click", startGame);
 /// let's get some points for whacking!
 function whack(e) {
   score++;
-  this.style.backgroundImage = 'url("qJohnXX.jpg")';
+  this.style.backgroundImage = 'url("xxqJohn.jpg")';
   this.style.pointerEvents = "none"; /// allows for only one click per appearance of the mole
   setTimeout(() => {
     this.style.backgroundImage = 'url("qJohnDeLancie.jpg")';
     this.style.pointerEvents = "all"; /// when pic resets the mole can 'score' points again when whacked
-  }, 500);
+  }, 800);
   scoreBoard.textContent = score;
 }
 
