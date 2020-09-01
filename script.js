@@ -53,7 +53,7 @@ function startGame() {
       countdown = 0;
       clearInterval(startCountdown);
       countdownBoard.textContent =
-        "Times up!! Thanks for whacking that rat fiend Q!";
+        "Times up!! Thanks for whacking that rat fiend Q! You scored: " + score;
     }
   }, 1000);
 }
@@ -75,3 +75,4 @@ function whack(e) {
 
 /// attach the points function to each 'mole'
 moles.forEach((mole) => mole.addEventListener("click", whack));
+

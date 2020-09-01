@@ -10,18 +10,25 @@ body {
 
 .wrapper {
   border: 4px solid black;
-  width: 900px;
-  height: 550px;
+  width: 100vw;
+  height: 100vh;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   overflow: hidden;
+  background-image: url('tngBridgeCBSOWNSTHIS.jpg');
+  background-repeat: no-repeat;
+  background-size: 650px 430px;
+  background-position: center;
+  
+
+
 }
 
 .score {
-  font-size: 150px;
-  color: #000000;
+  font-size: 100px;
+  color: #7d98f1;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -35,17 +42,13 @@ body {
 
 .countdown {
   position: absolute;
-  top: 520px;
+  top: 510px;
   width: 100%;
-  font-size: 20px;
+  font-size: 30px;
   text-align: center;
 }
 
 button {
-  position: absolute;
-  bottom: 3px;
-  left: 80%;
-  transform: translate(-80%, 0);
   background: black;
   color: white;
   padding: 10px 50px;
@@ -60,26 +63,21 @@ button {
   border: 2px solid black;
   width: 600px;
   height: 400px;
-  margin: 70px auto;
+  margin: 30px auto;
   z-index: 100;
   display: flex;
   flex-wrap: wrap;
 }
 
-.hole {
-  /* border: 3px solid red; */
-  flex: 1 0 33.33%;
-  position: relative;
-  overflow: hidden;
-}
+
 
 .hole:after {
   content: "";
   display: block;
   position: absolute;
-  background-color: olive;
+  background-color: rgb(147, 232, 247);
   width: 100%;
-  height: 70px;
+  height: 31px;
   z-index: 2;
   bottom: -30px;
   background-size: contain;
@@ -94,6 +92,7 @@ button {
   transition: 0.4s;
   background-repeat: no-repeat;
   background-position: bottom;
+  
 }
 
 .mole.small {
@@ -106,4 +105,16 @@ button {
 
 .hole.up .mole {
   top: 0;
+  z-index: 300;
+}
+
+.hole {
+    /* border: 3px solid red; */
+    flex: 1 0 33.33%;
+    position: relative;
+    overflow: hidden;
+  }
+
+.winSauce{
+    /* display: none; */
 }
