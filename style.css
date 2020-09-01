@@ -10,12 +10,12 @@ body {
 
 .wrapper {
   border: 4px solid black;
-  width: 100vw;
+  /* width: 100vw;
   height: 100vh;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
   overflow: hidden;
   background-image: url('tngBridgeCBSOWNSTHIS.jpg');
   background-repeat: no-repeat;
@@ -29,10 +29,10 @@ body {
 .score {
   font-size: 100px;
   color: #7d98f1;
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
   width: 200px;
   height: 100px;
   text-align: center;
@@ -41,11 +41,15 @@ body {
 }
 
 .countdown {
-  position: absolute;
-  top: 510px;
+  /* position: absolute;
+  top: 510px; */
   width: 100%;
   font-size: 30px;
   text-align: center;
+  color: rgb(6, 173, 89);
+  background-color: gainsboro;
+  width:80%;
+  margin: 2% 8%;
 }
 
 button {
@@ -57,6 +61,7 @@ button {
   cursor: pointer;
   border: none;
   outline: none;
+  /* margin:200px 20px; */
 }
 
 .game {
@@ -67,6 +72,7 @@ button {
   z-index: 100;
   display: flex;
   flex-wrap: wrap;
+  cursor:crosshair;
 }
 
 
@@ -75,7 +81,7 @@ button {
   content: "";
   display: block;
   position: absolute;
-  background-color: rgb(147, 232, 247);
+  /* background-color: rgb(147, 232, 247); */
   width: 100%;
   height: 31px;
   z-index: 2;
@@ -116,5 +122,11 @@ button {
   }
 
 .winSauce{
-    /* display: none; */
+    display: none;
+    margin:2%;
+}
+
+.words{
+    margin:10px 0 0 20px;
+    text-align: start;
 }

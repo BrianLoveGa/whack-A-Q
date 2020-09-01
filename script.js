@@ -5,12 +5,14 @@ const scoreBoard = document.querySelector(".score");
 const moles = document.querySelectorAll(".mole");
 const countdownBoard = document.querySelector(".countdown");
 const startButton = document.querySelector(".startButton");
+const winnerWords = document.querySelector(".winSauce");
 /// these will change so let them be lets
 let lastHole;
 let timeUp = false;
 let timeLimit = 20000; /// in milliseconds so this is 20 seconds
 let score = 0;
 let countdown;
+let notice = "";
 
 /// pick a hole randomly and not the one just used ...
 function pickRandomHole(holes) {
@@ -52,6 +54,7 @@ function startGame() {
     if (countdown < 0) {
       countdown = 0;
       clearInterval(startCountdown);
+      winSauce();
       countdownBoard.textContent =
         "Times up!! Thanks for whacking that rat fiend Q! You scored: " + score;
     }
@@ -75,4 +78,24 @@ function whack(e) {
 
 /// attach the points function to each 'mole'
 moles.forEach((mole) => mole.addEventListener("click", whack));
+
+function winSauce() {
+  if (timeUp) {
+    if (score <= 5) {
+      notice = "Good try, maybe you book some holodeck time and practice.";
+    } else if (score <= 11) {
+      notice = "Nice shooting, your Academy instructors should be proud.";
+    } else if (score <= 17) {
+      notice = "Excellent job ensign. You belong on the Bridge.";
+    } else if (score <= 22) {
+      notice =
+        "Wonderful shooting, I'm reccomending you for the Star Cross award. ";
+    } else if (score > 22) {
+      notice =
+        "Amazing you have the strength of Kahless, and the wisdom of Surak. ";
+    }
+    winnerWords.style.display = 'block';
+    winnerWords.textContent = notice;
+  }
+}
 
