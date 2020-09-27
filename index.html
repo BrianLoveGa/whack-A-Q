@@ -7,37 +7,64 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1 class="title words">Whack-A-Q</h1>
-    <h2 class="words">Set your phasers to fun</h2>
-    
-    <div class="winSauce">something cool you got 20 pts</div>
-    
-    <div class="wrapper">
-      
-      <div class="score">0</div>
-      <div class="countdown"></div>
-      <div class="game">
-        <div class="hole hole1 top1">
-          <div class="mole small"></div>
+    <div class="page">
+      <div class="header">
+        <h1 class="title">Blast-A-Q</h1>
+      </div>
+      <div class="top">
+        <div class="topLeft">
+          <h2 class="words">Set your phasers to fun</h2>
+          <div class="winSauce">something cool you got 20 pts</div>
         </div>
-        <div class="hole hole2 top2">
-          <div class="mole small"></div>
-        </div>
-        <div class="hole hole3 top3">
-          <div class="mole small"></div>
-        </div>
-        <div class="hole hole4">
-          <div class="mole large"></div>
-        </div>
-        <div class="hole hole5">
-          <div class="mole large"></div>
-        </div>
-        <div class="hole hole6">
-          <div class="mole large"></div>
+        <div class="topRight">
+          <div class="score">0</div>
+          <div class="countdown">time</div>
         </div>
       </div>
+      <div class="wrapper">
+        <div class="game">
+          <div class="hole hole1 top1">
+            <div class="mole small"></div>
+          </div>
+          <div class="hole hole2 top2">
+            <div class="mole small"></div>
+          </div>
+          <div class="hole hole3 top3">
+            <div class="mole small"></div>
+          </div>
+          <div class="hole hole4">
+            <div class="mole large"></div>
+          </div>
+          <div class="hole hole5">
+            <div class="mole large"></div>
+          </div>
+          <div class="hole hole6">
+            <div class="mole large"></div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <button class="startButton">START GAME</button>
+        <button class="infoModal">Instructions</button>
+        <form action="https://brianloveless.com/" method="get" target="_blank">
+          <button type="submit" class="link">BWL MADE THIS</button>
+        </form>
+      </div>
     </div>
-    <button class="startButton">START GAME</button>
+
+    <div class="instructionsModal">
+      <h2>Here is how you play:</h2>
+      <ul>
+        <li>Hit start game button</li>
+        <li>Zap the Q's by clicking them</li>
+        <li>or tapping when they appear</li>
+        <li>don't miss but ...</li>
+        <li>there is no penalty if you do</li>
+        <li>once Q's eyes are x'd no points until reset</li>
+      </ul>
+      <button class="closeInfo">CLOSE</button>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>

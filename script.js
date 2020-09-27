@@ -1,11 +1,14 @@
 console.log("check");
-// consts do not change
+// constants do not change
 const holes = document.querySelectorAll(".hole");
 const scoreBoard = document.querySelector(".score");
 const moles = document.querySelectorAll(".mole");
 const countdownBoard = document.querySelector(".countdown");
 const startButton = document.querySelector(".startButton");
 const winnerWords = document.querySelector(".winSauce");
+const instructionButton = document.querySelector(".infoModal");
+const information = document.querySelector(".instructionsModal");
+const closeInfo = document.querySelector(".closeInfo");
 /// these will change so let them be lets
 let lastHole;
 let timeUp = false;
@@ -37,9 +40,10 @@ function popOut() {
 
 // the 'game logic' loop running on boolean condition of timeUp with time limit interval
 function startGame() {
+  reset();
   countdown = timeLimit / 1000;
   scoreBoard.textContent = 0;
-  scoreBoard.style.display = "block";
+  scoreBoard.style.visibility = "visible";
   countdownBoard.textContent = countdown;
   timeUp = false;
   score = 0;
@@ -55,8 +59,8 @@ function startGame() {
       countdown = 0;
       clearInterval(startCountdown);
       winSauce();
-      countdownBoard.textContent =
-        "Times up!! Thanks for whacking that rat fiend Q! You scored: " + score;
+      countdownBoard.style.backgroundColor = "black";
+      countdownBoard.textContent = "Times up!!";
     }
   }, 1000);
 }
@@ -72,7 +76,7 @@ function whack(e) {
   setTimeout(() => {
     this.style.backgroundImage = 'url("qJohnDeLancie.jpg")';
     this.style.pointerEvents = "all"; /// when pic resets the mole can 'score' points again when whacked
-  }, 800);
+  }, 900);
   scoreBoard.textContent = score;
 }
 
@@ -82,20 +86,42 @@ moles.forEach((mole) => mole.addEventListener("click", whack));
 function winSauce() {
   if (timeUp) {
     if (score <= 5) {
-      notice = "Good try, maybe you book some holodeck time and practice.";
+      notice =
+        "Good try, maybe you should book some time on Holodeck three and practice.";
     } else if (score <= 11) {
       notice = "Nice shooting, your Academy instructors should be proud.";
     } else if (score <= 17) {
       notice = "Excellent job ensign. You belong on the Bridge.";
     } else if (score <= 22) {
       notice =
-        "Wonderful shooting, I'm reccomending you for the Star Cross award. ";
+        "Wonderful shooting, I'm recommending you for the Star Cross award. ";
     } else if (score > 22) {
       notice =
         "Amazing you have the strength of Kahless, and the wisdom of Surak. ";
     }
-    winnerWords.style.display = 'block';
+    winnerWords.style.visibility = "visible";
     winnerWords.textContent = notice;
+    winnerWords.style.backgroundColor = "black";
+    scoreBoard.style.backgroundColor = "black";
+    scoreBoard.textContent = "You scored: " + score;
   }
 }
 
+function reset() {
+  /// change winner words background color back
+  countdownBoard.style.backgroundColor = "rgb(47, 0, 255)";
+  scoreBoard.style.backgroundColor = "rgb(47, 0, 255)";
+  winnerWords.style.backgroundColor = "rgb(47, 0, 255)";
+}
+
+function showInfo() {
+  information.style.display = "block";
+}
+
+instructionButton.addEventListener("click", showInfo);
+
+function hideInfo() {
+  information.style.display = "none";
+}
+
+closeInfo.addEventListener("click", hideInfo);
