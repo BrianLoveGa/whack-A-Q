@@ -67,6 +67,22 @@ body {
   color: rgb(6, 173, 89);
   margin-top: -10px;
 }
+
+.left{
+  position: absolute;
+  left: 20px;
+  margin-top: 20%;
+  padding: 10px;
+}
+
+.right{
+  position: absolute;
+  right: 30px;
+  margin-top: 20%;
+  padding:10px;
+}
+
+
 /* the place mat */
 .wrapper {
   height: 72vh;

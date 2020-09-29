@@ -9,6 +9,8 @@ const winnerWords = document.querySelector(".winSauce");
 const instructionButton = document.querySelector(".infoModal");
 const information = document.querySelector(".instructionsModal");
 const closeInfo = document.querySelector(".closeInfo");
+const displayedHighScore = document.getElementById("highScore");
+const levelSelector = document.getElementById("level")
 /// these will change so let them be lets
 let lastHole;
 let timeUp = false;
@@ -16,7 +18,9 @@ let timeLimit = 20000; /// in milliseconds so this is 20 seconds
 let score = 0;
 let countdown;
 let notice = "";
-
+let speed = 1;
+let highScore = 0;
+let level = 1;
 /// pick a hole randomly and not the one just used ...
 
 function pickRandomHole(holes) {
@@ -31,7 +35,7 @@ function pickRandomHole(holes) {
 // animate the 'mole' up and then down by adding css up class to it
 
 function popOut() {
-  const time = Math.random() * 1300 + 400;
+  const time = Math.random() * speed + 400;
   const hole = pickRandomHole(holes);
   hole.classList.add("up");
   setTimeout(function () {
@@ -90,22 +94,23 @@ function whack(e) {
 moles.forEach((mole) => mole.addEventListener("click", whack));
 
 /// 'fun' words depending on score might change to gifs later
+/// and current session 'high score'
 
 function winSauce() {
   if (timeUp) {
     if (score <= 5) {
       notice =
-        "Good try, maybe you should book some time on Holodeck three and practice.";
+        "Good try, but maybe you should book some time on Holodeck three and practice.";
     } else if (score <= 11) {
       notice = "Nice shooting, your Academy instructors should be proud.";
     } else if (score <= 17) {
-      notice = "Excellent job ensign. You belong on the Bridge.";
+      notice = "Excellent job Ensign. You belong on the bridge.";
     } else if (score <= 22) {
       notice =
         "Wonderful shooting, I'm recommending you for the Star Cross award. ";
     } else if (score > 22) {
       notice =
-        "Amazing you have the strength of Kahless, and the wisdom of Surak. ";
+        "Amazing ! You have the strength of Kahless, and the wisdom of Surak. ";
     }
     winnerWords.style.visibility = "visible";
     winnerWords.textContent = notice;
@@ -113,6 +118,10 @@ function winSauce() {
     scoreBoard.style.backgroundColor = "black";
     scoreBoard.textContent = "You scored: " + score;
     startButton.textContent = "Play Again";
+    if(score >= highScore){
+      displayedHighScore.innerHTML = "high score : " + score;
+      highScore = score;
+    }
   }
 }
 
@@ -138,3 +147,16 @@ function hideInfo() {
   information.style.display = "none";
 }
 closeInfo.addEventListener("click", hideInfo);
+
+
+/// change level
+
+/// on click change level display and change speed interval & time?
+
+
+// 0 default - time = 25000 ... speed = 1800
+// 1 default - time = 20000 ... speed = 1300
+// 2 default - time = 20000 ... speed = 1300
+// 3 default - time = 20000 ... speed = 1300
+// 4 default - time = 20000 ... speed = 1300
+// 5 default - time = 20000 ... speed = 1300
