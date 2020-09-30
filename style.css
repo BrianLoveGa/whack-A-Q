@@ -232,13 +232,21 @@ li {
   .score,
   .countdown {
     margin: 1%;
-    margin-right: -50%;
+    margin-right: 0;
     background-color: transparent;
     /* border: 3px solid yellow; */
   }
 
   .winSauce {
     text-shadow: none;
+  }
+  .left{
+    left:-5px;
+    margin-top: 30%;
+  }
+  .right{
+    right:0;
+    margin-top: 30%;
   }
 }
 
