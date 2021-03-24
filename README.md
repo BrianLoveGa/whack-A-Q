@@ -4,7 +4,7 @@
 
 Adjusting level timings - currently down.
 
-~~https://brianlovega.github.io/whack-A-Q/
+~~https:// brianlovega.github.io/
 
 Just Click to 'whack' that pesky Q !
 
