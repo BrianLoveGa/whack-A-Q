@@ -2,7 +2,9 @@
 
 ---
 
-https://brianlovega.github.io/whack-A-Q/
+Adjusting level timings - currently down.
+
+~~https://brianlovega.github.io/whack-A-Q/
 
 Just Click to 'whack' that pesky Q !
 
@@ -25,11 +27,11 @@ I could think of no-one more deserving of a few whacks than that rat fiend Q.
 
 to Do :
 
-- add instructions modal
-
+- ~~add instructions modal
 - ~~make responsive css
 - ~~add win conditional text array / dsplay
 - add high score keeper (SERVER)
 - different css (buttons, background, different q's?)
 - ~~add sounds?~~(NO THE WORLD HATES SOUNDS ON WEBSITES ACCORDING TO REDDIT)
+- add different difficulty levels
 
