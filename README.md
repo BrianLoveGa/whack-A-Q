@@ -2,7 +2,13 @@
 
 ---
 
-Take some anger out on that rat fiend 'Q'. HTML CSS JavaScript
+https://brianlovega.github.io/whack-A-Q/
+
+Just Click to 'whack' that pesky Q !
+
+Take some anger out on that rat fiend 'Q' from a beloved show from my past now making a resurgence in pop culture. 
+
+HTML CSS JavaScript
 
 From Frank's Laboratory on You Tube
 https://www.youtube.com/watch?v=RTb8icFiSfk
