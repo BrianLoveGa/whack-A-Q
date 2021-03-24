@@ -27,9 +27,9 @@ I could think of no-one more deserving of a few whacks than that rat fiend Q.
 
 to Do :
 
-- ~~add instructions modal
-- ~~make responsive css
-- ~~add win conditional text array / dsplay
+- ~~add instructions modal~~
+- ~~make responsive css~~
+- ~~add win conditional text array / dsplay~~
 - add high score keeper (SERVER)
 - different css (buttons, background, different q's?)
 - ~~add sounds?~~(NO THE WORLD HATES SOUNDS ON WEBSITES ACCORDING TO REDDIT)
