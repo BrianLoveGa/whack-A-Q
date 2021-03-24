@@ -2,9 +2,9 @@
 
 ---
 
-Adjusting level timings - currently down.
+Adjusting level timings - project live site currently down.
 
-~~https:// brianlovega.github.io/
+---
 
 Just Click to 'whack' that pesky Q !
 
