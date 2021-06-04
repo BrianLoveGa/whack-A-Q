@@ -13,11 +13,11 @@ https://www.youtube.com/watch?v=RTb8icFiSfk
 
 He made a game for the Star Wars Mandalorian where you whack-a-mole but the mole is the child aka "baby yoda".
 
-I feel there is enough violence towards children and 'aliens' in this mess of a world so after watching  re-run of TNG I wanted to alter this attempt so we could all whack a guy that deserves it!
+I feel there is enough violence towards children and 'aliens' in this mess of a world so after watching re-run of TNG I wanted to alter this attempt so we could all whack a guy that deserves it!
 
 I could think of no-one more deserving of a few whacks than that rat fiend Q.
 
-******
+---
 
 to Do :
 

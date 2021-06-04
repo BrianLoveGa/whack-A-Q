@@ -10,7 +10,7 @@ const instructionButton = document.querySelector(".infoModal");
 const information = document.querySelector(".instructionsModal");
 const closeInfo = document.querySelector(".closeInfo");
 const displayedHighScore = document.getElementById("highScore");
-const levelSelector = document.getElementById("level")
+const levelSelector = document.getElementById("level");
 /// these will change so let them be lets
 let lastHole;
 let timeUp = false;
@@ -116,9 +116,9 @@ function winSauce() {
     winnerWords.textContent = notice;
     winnerWords.style.backgroundColor = "black";
     scoreBoard.style.backgroundColor = "black";
-    scoreBoard.textContent = "You scored: " + score;
+    scoreBoard.textContent = "SCORE: " + score;
     startButton.textContent = "Play Again";
-    if(score >= highScore){
+    if (score >= highScore) {
       displayedHighScore.innerHTML = "high score : " + score;
       highScore = score;
     }
@@ -148,11 +148,9 @@ function hideInfo() {
 }
 closeInfo.addEventListener("click", hideInfo);
 
-
 /// change level
 
 /// on click change level display and change speed interval & time?
-
 
 // 0 default - time = 25000 ... speed = 1800
 // 1 default - time = 20000 ... speed = 1300
