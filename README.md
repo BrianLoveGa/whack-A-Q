@@ -2,7 +2,15 @@
 
 ---
 
-Take some anger out on that rat fiend 'Q'. HTML CSS JavaScript
+Adjusting level timings - project live site currently down.
+
+---
+
+Just Click to 'whack' that pesky Q !
+
+Take some anger out on that rat fiend 'Q' from a beloved show from my past now making a resurgence in pop culture. 
+
+HTML CSS JavaScript
 
 From Frank's Laboratory on You Tube
 https://www.youtube.com/watch?v=RTb8icFiSfk
@@ -19,11 +27,11 @@ I could think of no-one more deserving of a few whacks than that rat fiend Q.
 
 to Do :
 
-- add instructions modal
-- make accessable
-- make responsive css
-- add win conditional text array / dsplay
-- add high score keeper
-- better css (buttons background different q's?)
-- add sounds?
+- ~~add instructions modal~~
+- ~~make responsive css~~
+- ~~add win conditional text array / dsplay~~
+- add high score keeper (SERVER)
+- different css (buttons, background, different q's?)
+- ~~add sounds?~~(NO THE WORLD HATES SOUNDS ON WEBSITES ACCORDING TO REDDIT)
+- add different difficulty levels
 
