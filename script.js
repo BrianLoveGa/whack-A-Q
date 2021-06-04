@@ -18,7 +18,7 @@ let timeLimit = 20000; /// in milliseconds so this is 20 seconds
 let score = 0;
 let countdown;
 let notice = "";
-let speed = 1;
+let speed = 1500;
 let highScore = 0;
 let level = 1;
 /// pick a hole randomly and not the one just used ...
